@@ -1,0 +1,17 @@
+{
+  "name": "portfolio-v2",
+  "version": "1.0.0",
+  "description": "Milan's Portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Milan Lizraidi",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.13"
+  },
+  "dependencies": {
+    "feather-icons": "^4.29.2"
+  }
+}

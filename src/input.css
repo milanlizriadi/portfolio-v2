@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --dark: #09090b;
+  --primary: #fafafa;
+}
+
+/* Scrollbar Width */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+  background: #18181b;
+}
+
+/* Scrollbar Handle */
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 1rem;
+}
+
+/* Scrollbar Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #37373b;
+}
+
+/* Text Color */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  @apply text-primary cursor-none;
+}
+
+/* Cursor */
+.cursor-outline {
+  @apply w-8 h-8 border-2 border-primary transition duration-200 ease-in-out;
+}
+
+.cursor-dot {
+  @apply w-1 h-1 bg-primary;
+}
+
+.cursor-dot,
+.cursor-outline {
+  @apply fixed top-0 left-0 -translate-x-1/2 -translate-y-1/2 rounded-full z-[1] pointer-events-none;
+}
+
+:active .cursor-outline {
+  @apply opacity-15 transition duration-100 ease-in-out;
+}
+
+/* Selection */
+::-moz-selection {
+  color: var(--dark);
+  background: white;
+}
+
+::selection {
+  color: var(--dark);
+  background: white;
+}
+
+.btn-normal {
+  @apply px-4 py-2 bg-primary text-dark rounded-sm;
+}
+
+.btn-lg {
+  @apply px-8 py-4 bg-primary text-dark rounded-sm;
+}
+
+.bg-blur {
+  filter: blur(12rem);
+}
+
+.transition-300 {
+  @apply transition duration-300 ease-in-out;
+}
+
+nav {
+  backdrop-filter: blur(10px);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.15);
+}
