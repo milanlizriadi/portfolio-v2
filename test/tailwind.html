@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" class="cursor-default">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Milan's Portfolio Website" />
+    <meta name="keywords" content="Milan,Milan Lizriadi,Portfolio" />
+    <meta name="author" content="Milan Lizraidi" />
+
+    <title>Milan's Portfolio | Portfolio v2</title>
+
+    <link rel="stylesheet" href="dist/output.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body class="scroll-smoothn">
+    <div class="cursor-dot lg:flex hidden z-50" data-cursor-dot></div>
+    <div class="cursor-outline lg:flex hidden z-50" data-cursor-outline></div>
+
+    <main id="literally-main"></main>
+
+    <!-- Cursor Script -->
+    <script src="dist/js/cursor.js"></script>
+
+    <!-- Navbar Script -->
+    <script src="dist/js/navbar.js"></script>
+
+    <!-- Disable Right Clicking -->
+    <script>
+      document.addEventListener("contextmenu", (event) =>
+        event.preventDefault()
+      );
+    </script>
+
+    <!-- Feather Icon -->
+
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

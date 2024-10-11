@@ -10,94 +10,13 @@
     <title>Milan's Portfolio | Portfolio v2</title>
 
     <link rel="stylesheet" href="dist/output.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body class="scroll-smooth bg-dark overflow-x-hidden">
-    <div class="cursor-dot lg:flex hidden z-50" data-cursor-dot></div>
-    <div class="cursor-outline lg:flex hidden z-50" data-cursor-outline></div>
-
-    <nav class="bg-dark bg-opacity-95 sticky top-0 z-10 py-4">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-center lg:justify-between items-center h-16">
-          <!-- Logo -->
-          <div class="flex-shrink-0">
-            <a
-              href="#"
-              class="text-2xl font-bold text-white hover:scale-105 hover:opacity-75 transition-300"
-              >Milan Lizriadi</a
-            >
-          </div>
-          <!-- Links -->
-          <div class="hidden md:flex md:space-x-8">
-            <a
-              href="#home"
-              class="text-primary hover:opacity-75 text-lg font-normal transition-300"
-              >Home</a
-            >
-            <a
-              href="#about"
-              class="text-primary hover:opacity-75 text-lg font-normal transition-300"
-              >About</a
-            >
-            <a
-              href="#projects"
-              class="text-primary hover:opacity-75 text-lg font-normal transition-300"
-              >Projects</a
-            >
-            <a
-              href="#contact"
-              class="text-primary hover:opacity-75 text-lg font-normal transition-300"
-              >Contact</a
-            >
-          </div>
-          <!-- Hamburger Menu -->
-          <div class="absolute right-0 top-0 mt-4 mr-4 md:hidden">
-            <button
-              id="mobile-menu-button"
-              class="inline-flex items-center justify-center p-2 rounded-md text-primary hover:opacity-75 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary">
-              <svg
-                class="h-6 w-6"
-                stroke="currentColor"
-                fill="none"
-                viewBox="0 0 24 24">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Mobile Menu with Animation -->
-      <div
-        id="mobile-menu"
-        class="md:hidden transform scale-y-0 opacity-0 origin-top transition-all duration-300 ease-in-out">
-        <div class="px-2 pt-2 pb-3 space-y-1">
-          <a
-            href="#home"
-            class="block text-white hover:opacity-75 hover:translate-x-2 px-3 py-2 rounded-md text-base font-medium"
-            >Home</a
-          >
-          <a
-            href="#about"
-            class="block text-white hover:opacity-75 hover:translate-x-2 px-3 py-2 rounded-md text-base font-medium"
-            >About</a
-          >
-          <a
-            href="#projects"
-            class="block text-white hover:opacity-75 hover:translate-x-2 px-3 py-2 rounded-md text-base font-medium"
-            >Projects</a
-          >
-          <a
-            href="#contact"
-            class="block text-white hover:opacity-75 hover:translate-x-2 px-3 py-2 rounded-md text-base font-medium"
-            >Contact</a
-          >
-        </div>
-      </div>
-    </nav>
+    <div class="cursor-dot lg:flex hidden z-[500]" data-cursor-dot></div>
+    <div
+      class="cursor-outline lg:flex hidden z-[500]"
+      data-cursor-outline></div>
 
     <main id="literally-main">
       <!-- Landing Page Start -->
@@ -106,11 +25,11 @@
         class="h-screen w-screen bg-dark flex justify-center items-center flex-col">
         <!-- top left blur -->
         <!-- <div
-          class="bg-[#0b111e] w-[32rem] h-[32rem] rounded-full absolute -top-52 -left-52 bg-blur z-[1]"></div> -->
+          class="bg-[#0b111e] w-[32rem] h-[32rem] rounded-full absolute -top-52 -left-52 bg-blur -z-0"></div> -->
 
         <!-- middle blur -->
         <!-- <div
-          class="bg-[#0b111e] w-[32rem] h-[32rem] rounded-full absolute bg-blur opacity-75 z-[1]"></div> -->
+          class="bg-[#0b111e] w-[32rem] h-[32rem] rounded-full absolute bg-blur opacity-75 -z-0"></div> -->
 
         <p
           class="lg:text-3xl md:text-2xl text-xl mb-4 hover:opacity-75 transtition duration-300 ease-in-out text-center z-10">
@@ -193,6 +112,47 @@
       <!-- About Section End -->
     </main>
 
+    <footer class="relative w-full mb-20 mt-72">
+      <div class="w-full px-8 mx-auto max-w-7xl">
+        <div
+          class="flex flex-col items-center justify-center w-full py-4 mt-12 border-t border-primary border-opacity-25 md:flex-row md:justify-between">
+          <p
+            class="block mb-4 text-xl text-center text-primary opacity-50 hover:opacity-75 transition-500 md:mb-0 font-normal">
+            Copyright &copy; 2024
+            <a href="https://www.github.com/milanlizriadi" class="font-semibold"
+              >Milan Lizriadi</a
+            >. All Rights Reserved.
+          </p>
+
+          <div class="flex gap-4 sm:justify-center">
+            <!-- Github -->
+            <a
+              href="https://www.github.com/milanlizriadi"
+              target="_blank"
+              class="border rounded-full p-3 hover:opacity-70 hover:scale-105 transition-300">
+              <i data-feather="github"></i>
+            </a>
+
+            <!-- Facebook -->
+            <a
+              href="https://www.facebook.com/milanlizriadi"
+              target="_blank"
+              class="border rounded-full p-3 hover:opacity-70 hover:scale-105 transition-300">
+              <i data-feather="facebook"></i>
+            </a>
+
+            <!-- Twitter -->
+            <a
+              href="https://www.twitter.com/milanlizriadi"
+              target="_blank"
+              class="border rounded-full p-3 hover:opacity-70 hover:scale-105 transition-300">
+              <i data-feather="twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <!-- Cursor Script -->
     <script src="dist/js/cursor.js"></script>
 
@@ -206,8 +166,9 @@
       );
     </script>
 
-    <!-- Feather Icon -->
-    <script src="node_modules/feather-icons/dist/feather.js"></script>
+    <!-- FRee tailwind component chat!!1  -->
+    <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/collapse.js"></script>
+
     <script>
       feather.replace();
     </script>
