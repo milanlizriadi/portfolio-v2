@@ -10,9 +10,11 @@
     <title>Milan's Portfolio | Portfolio v2</title>
 
     <link rel="stylesheet" href="dist/output.css" />
+    <link rel="stylesheet" href="dist/css/locomotive.css" />
+
     <script src="https://unpkg.com/feather-icons"></script>
   </head>
-  <body class="scroll-smooth bg-dark overflow-x-hidden">
+  <body class="scroll-smooth bg-background overflow-x-hidden">
     <div class="cursor-dot lg:flex hidden z-[500]" data-cursor-dot></div>
     <div
       class="cursor-outline lg:flex hidden z-[500]"
@@ -22,7 +24,7 @@
       <!-- Landing Page Start -->
       <section
         id="home"
-        class="h-screen w-screen bg-dark flex justify-center items-center flex-col">
+        class="h-screen w-screen bg-background flex justify-center items-center flex-col">
         <!-- top left blur -->
         <!-- <div
           class="bg-[#0b111e] w-[32rem] h-[32rem] rounded-full absolute -top-52 -left-52 bg-blur -z-0"></div> -->
@@ -47,69 +49,6 @@
         </a>
       </section>
       <!-- Landing Page End -->
-
-      <!-- About Section Start -->
-      <section id="about">
-        <div class="container">
-          <div class="flex flex-wrap items-center">
-            <div class="w-full px-4 lg:w-1/2">
-              <img
-                src="dist/img/about.png"
-                alt="a Picture of Me"
-                class="rounded-xl w-full lg:w-[70%] border-primary border-2" />
-            </div>
-            <div class="w-full px-4 lg:w-1/2">
-              <h3
-                class="mb-4 text-3xl font-semibold text-primary pt-12 lg:pt-0 lg:text-3xl">
-                About Me.
-              </h3>
-              <p
-                class="mb-6 text-base font-normal text-secondary lg:text-lg opacity-75">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab et
-                dignissimos eaque omnis. Est, facere beatae! Illum officia
-                aperiam tempore iure! Rerum minima ab eaque, assumenda illum
-                nesciunt aspernatur ipsa ad placeat beatae cum illo?
-              </p>
-
-              <p
-                class="mb-6 text-base font-normal text-secondary lg:text-lg opacity-75">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-                reiciendis sed, quia, repellendus impedit voluptatum esse
-                sapiente possimus culpa ut ab deleniti ullam obcaecati,
-                temporibus tempore distinctio consequuntur! Aut aperiam
-                voluptates quibusdam nobis.
-              </p>
-
-              <div class="flex items-center gap-4 mt-16">
-                <!-- Facebook -->
-                <a
-                  href="https://www.facebook.com/milanlizriadi"
-                  target="_blank"
-                  class="border rounded-full p-3 hover:opacity-70 hover:scale-105 transition-300">
-                  <i data-feather="facebook"></i>
-                </a>
-
-                <!-- Twitter -->
-                <a
-                  href="https://www.twitter.com/milanlizriadi"
-                  target="_blank"
-                  class="border rounded-full p-3 hover:opacity-70 hover:scale-105 transition-300">
-                  <i data-feather="twitter"></i>
-                </a>
-
-                <!-- Github -->
-                <a
-                  href="https://www.github.com/milanlizriadi"
-                  target="_blank"
-                  class="border rounded-full p-3 hover:opacity-70 hover:scale-105 transition-300">
-                  <i data-feather="github"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- About Section End -->
     </main>
 
     <footer class="relative w-full mb-20 mt-72">
@@ -130,7 +69,7 @@
               href="https://www.github.com/milanlizriadi"
               target="_blank"
               class="border rounded-full p-3 hover:opacity-70 hover:scale-105 transition-300">
-              <i data-feather="github"></i>
+              <i data-feather="github" class="text-primary"></i>
             </a>
 
             <!-- Facebook -->
@@ -138,7 +77,7 @@
               href="https://www.facebook.com/milanlizriadi"
               target="_blank"
               class="border rounded-full p-3 hover:opacity-70 hover:scale-105 transition-300">
-              <i data-feather="facebook"></i>
+              <i data-feather="facebook" class="text-primary"></i>
             </a>
 
             <!-- Twitter -->
@@ -146,7 +85,7 @@
               href="https://www.twitter.com/milanlizriadi"
               target="_blank"
               class="border rounded-full p-3 hover:opacity-70 hover:scale-105 transition-300">
-              <i data-feather="twitter"></i>
+              <i data-feather="twitter" class="text-primary"></i>
             </a>
           </div>
         </div>
@@ -158,6 +97,9 @@
 
     <!-- Navbar Script -->
     <script src="dist/js/navbar.js"></script>
+
+    <!-- Locomotive Scroll -->
+    <script src="dist/js/locomotive.js"></script>
 
     <!-- Disable Right Clicking -->
     <script>
