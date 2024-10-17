@@ -1,8 +1,6 @@
 const cursorDot = document.querySelector("[data-cursor-dot]");
 const cursorOutline = document.querySelector("[data-cursor-outline]");
 
-document.body.requestPointerLock();
-
 window.addEventListener("mousemove", function (e) {
   const posX = e.clientX;
   const posY = e.clientY;
