@@ -20,7 +20,13 @@
       class="cursor-outline lg:flex hidden z-[500]"
       data-cursor-outline></div>
 
-    <main id="literally-main">
+    <div class="main-container">
+      <menu>
+        <lines><span></span></lines>
+      </menu>
+    </div>
+
+    <main id="literally-main" data-scroll-container>
       <!-- Landing Page Start -->
       <section
         id="home"
@@ -49,48 +55,70 @@
         </a>
       </section>
       <!-- Landing Page End -->
-    </main>
 
-    <footer class="relative w-full mb-20 mt-72">
-      <div class="w-full px-8 mx-auto max-w-7xl">
-        <div
-          class="flex flex-col items-center justify-center w-full py-4 mt-12 border-t border-primary border-opacity-25 md:flex-row md:justify-between">
-          <p
-            class="block mb-4 text-xl text-center text-primary opacity-50 hover:opacity-75 transition-500 md:mb-0 font-normal">
-            Copyright &copy; 2024
-            <a href="https://www.github.com/milanlizriadi" class="font-semibold"
-              >Milan Lizriadi</a
-            >. All Rights Reserved.
-          </p>
+      <!-- About Section Start -->
+      <section id="about">
+        <div class="container">
+          <div class="flex flex-wrap items-center">
+            <div class="w-full px-4 lg:w-1/2">
+              <img
+                src="dist/img/about.png"
+                alt="a Picture of Me"
+                class="rounded-xl w-full lg:w-[70%] border-primary border-2" />
+            </div>
+            <div class="w-full px-4 lg:w-1/2">
+              <h3
+                class="mb-4 text-3xl font-semibold text-primary pt-12 lg:pt-0 lg:text-3xl">
+                About Me.
+              </h3>
+              <p
+                class="mb-6 text-base font-normal text-secondary lg:text-lg opacity-75">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab et
+                dignissimos eaque omnis. Est, facere beatae! Illum officia
+                aperiam tempore iure! Rerum minima ab eaque, assumenda illum
+                nesciunt aspernatur ipsa ad placeat beatae cum illo?
+              </p>
 
-          <div class="flex gap-4 sm:justify-center">
-            <!-- Github -->
-            <a
-              href="https://www.github.com/milanlizriadi"
-              target="_blank"
-              class="border rounded-full p-3 hover:opacity-70 hover:scale-105 transition-300">
-              <i data-feather="github" class="text-primary"></i>
-            </a>
+              <p
+                class="mb-6 text-base font-normal text-secondary lg:text-lg opacity-75">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+                reiciendis sed, quia, repellendus impedit voluptatum esse
+                sapiente possimus culpa ut ab deleniti ullam obcaecati,
+                temporibus tempore distinctio consequuntur! Aut aperiam
+                voluptates quibusdam nobis.
+              </p>
 
-            <!-- Facebook -->
-            <a
-              href="https://www.facebook.com/milanlizriadi"
-              target="_blank"
-              class="border rounded-full p-3 hover:opacity-70 hover:scale-105 transition-300">
-              <i data-feather="facebook" class="text-primary"></i>
-            </a>
+              <div class="flex items-center gap-4 mt-16">
+                <!-- Facebook -->
+                <a
+                  href="https://www.facebook.com/milanlizriadi"
+                  target="_blank"
+                  class="border rounded-full p-3 hover:opacity-70 hover:scale-105 transition-300">
+                  <i data-feather="facebook"></i>
+                </a>
 
-            <!-- Twitter -->
-            <a
-              href="https://www.twitter.com/milanlizriadi"
-              target="_blank"
-              class="border rounded-full p-3 hover:opacity-70 hover:scale-105 transition-300">
-              <i data-feather="twitter" class="text-primary"></i>
-            </a>
+                <!-- Twitter -->
+                <a
+                  href="https://www.twitter.com/milanlizriadi"
+                  target="_blank"
+                  class="border rounded-full p-3 hover:opacity-70 hover:scale-105 transition-300">
+                  <i data-feather="twitter"></i>
+                </a>
+
+                <!-- Github -->
+                <a
+                  href="https://www.github.com/milanlizriadi"
+                  target="_blank"
+                  class="border rounded-full p-3 hover:opacity-70 hover:scale-105 transition-300">
+                  <i data-feather="github"></i>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </section>
+      <!-- About Section End -->
+    </main>
 
     <!-- Cursor Script -->
     <script src="dist/js/cursor.js"></script>
@@ -110,6 +138,14 @@
 
     <!-- FRee tailwind component chat!!1  -->
     <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/collapse.js"></script>
+
+    <script src="node_modules/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+    <script>
+      const scroll = new LocomotiveScroll({
+        el: document.querySelector("[data-scroll-container]"),
+        smooth: true,
+      });
+    </script>
 
     <script>
       feather.replace();

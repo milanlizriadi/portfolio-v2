@@ -81,11 +81,3 @@ i {
 .transition-500 {
   @apply transition duration-500 ease-in-out;
 }
-
-.hamburger-line {
-  @apply w-8 h-[2px] my-2 block bg-primary;
-}
-
-.hamburger-active .hamburger-line {
-  @apply m-0 h-[1px];
-}
