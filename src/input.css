@@ -39,6 +39,8 @@ p,
 a,
 i {
   @apply text-primary cursor-none;
+
+  font-family: "Poppins", sans-serif;
 }
 
 /* Cursor */
@@ -52,7 +54,7 @@ i {
 
 .cursor-dot,
 .cursor-outline {
-  @apply fixed top-0 left-0 -translate-x-1/2 -translate-y-1/2 rounded-full z-[1] pointer-events-none;
+  @apply fixed top-0 left-0 -translate-x-1/2 -translate-y-1/2 rounded-full z-[1] pointer-events-none mix-blend-difference;
 }
 
 :active .cursor-outline {
@@ -68,6 +70,11 @@ i {
 ::selection {
   color: var(--dark);
   background: white;
+}
+
+.loader__circle {
+  border: 2px solid var(--dark);
+  border-top: 2px solid var(--primary);
 }
 
 .bg-blur {

@@ -12,7 +12,15 @@
     <link rel="stylesheet" href="dist/output.css" />
     <link rel="stylesheet" href="dist/css/locomotive.css" />
 
-    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
+
+    <script
+      src="https://kit.fontawesome.com/167f9ffc0b.js"
+      crossorigin="anonymous"></script>
   </head>
   <body class="scroll-smooth bg-background overflow-x-hidden">
     <div class="cursor-dot lg:flex hidden z-[500]" data-cursor-dot></div>
@@ -20,10 +28,9 @@
       class="cursor-outline lg:flex hidden z-[500]"
       data-cursor-outline></div>
 
-    <div class="main-container">
-      <menu>
-        <lines><span></span></lines>
-      </menu>
+    <div
+      class="loader absolute inset-0 bg-dark flex justify-center items-center transition-opacity duration-500 ease-in-out z-[150]">
+      <div class="loader__circle w-14 h-14 rounded-full animate-spin"></div>
     </div>
 
     <main id="literally-main" data-scroll-container>
@@ -89,28 +96,36 @@
               </p>
 
               <div class="flex items-center gap-4 mt-16">
+                <!-- Discord -->
+                <a
+                  href="https://discord.com/users/1125624785083302000"
+                  target="_blank"
+                  class="fa-brands text-2xl fa-discord border rounded-full p-3 hover:opacity-70 hover:scale-105 transition-300">
+                  <i target="_blank"></i>
+                </a>
+
                 <!-- Facebook -->
                 <a
-                  href="https://www.facebook.com/milanlizriadi"
+                  href="https://facebook.com/milanlizriadi"
                   target="_blank"
-                  class="border rounded-full p-3 hover:opacity-70 hover:scale-105 transition-300">
-                  <i data-feather="facebook"></i>
+                  class="fa-brands text-2xl fa-facebook border rounded-full p-3 hover:opacity-70 hover:scale-105 transition-300">
+                  <i target="_blank"></i>
                 </a>
 
                 <!-- Twitter -->
                 <a
-                  href="https://www.twitter.com/milanlizriadi"
+                  href="https://twitter.com/milanlizriadi"
                   target="_blank"
-                  class="border rounded-full p-3 hover:opacity-70 hover:scale-105 transition-300">
-                  <i data-feather="twitter"></i>
+                  class="fa-brands text-2xl fa-twitter border rounded-full p-3 hover:opacity-70 hover:scale-105 transition-300">
+                  <i target="_blank"></i>
                 </a>
 
                 <!-- Github -->
                 <a
-                  href="https://www.github.com/milanlizriadi"
+                  href="https://github.com/milanlizriadi"
                   target="_blank"
-                  class="border rounded-full p-3 hover:opacity-70 hover:scale-105 transition-300">
-                  <i data-feather="github"></i>
+                  class="fa-brands text-2xl fa-github border rounded-full p-3 hover:opacity-70 hover:scale-105 transition-300">
+                  <i target="_blank"></i>
                 </a>
               </div>
             </div>
@@ -136,16 +151,22 @@
       );
     </script>
 
+    <!-- Loading Screen -->
+    <script>
+      window.onload = function () {
+        document.querySelector(".loader").style.opacity = 0;
+        setTimeout(() => {
+          document.querySelector(".loader").style.display = "none";
+        }, 1000);
+      };
+    </script>
+
     <script src="dist/js/locomotive.js"></script>
     <script>
       const scroll = new LocomotiveScroll({
         el: document.querySelector("[data-scroll-container]"),
         smooth: true,
       });
-    </script>
-
-    <script>
-      feather.replace();
     </script>
   </body>
 </html>
